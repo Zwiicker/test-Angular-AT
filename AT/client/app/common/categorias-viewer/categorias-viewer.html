@@ -1,0 +1,28 @@
+<h3>
+  Lista de Categorias
+  <button class="btn btn-primary" 
+          ng-click="$ctrl.onAddBtnClicked({})"
+          uib-tooltip="Adicionar uma nova categoria"
+          tooltip-placement="top">
+    <span class="glyphicon glyphicon-plus"></span>
+  </button>
+  <button class="btn btn-primary"
+          ng-click="$ctrl.resetarCategorias()"
+          uib-tooltip="Resetar categoria"
+          tooltip-placement="top">
+    <span class="glyphicon glyphicon-refresh"></span>
+  </button>
+</h3>
+<p ng-repeat="categoria in $ctrl.categorias track by categoria.id"
+   ng-click="$ctrl.onCategoriaClicked({$event:categoria})">
+
+
+  <span><strong>id: </strong></span>
+  <span><strong>{{categoria.id}}<br></strong></span>
+
+  <span><strong>Nome: </strong></span>
+  <span><strong>{{categoria.name}}<br></strong></span>
+
+  <span><strong>Descrição : </strong></span>
+  <span>{{categoria.mensagem}}<br></span>
+</p>

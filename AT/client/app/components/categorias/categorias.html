@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>Categorias</h1>
+  </div>
+  <div class="col-xs-6">
+    <categorias-viewer 
+      categorias="$ctrl.categorias"
+      on-categoria-clicked="$ctrl.onCategoriaClicked($event)"
+      criar-novo-categoria="$ctrl.criarNovoCategoria($event)"
+      
+      resetar-categorias="$ctrl.resetarCategorias($event)">
+    </categorias-viewer>
+  </div>
+  <div class="col-xs-6" ui-view>
+
+  </div>
+</div>

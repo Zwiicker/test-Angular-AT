@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>Notícias</h1>
+  </div>
+  <div class="col-xs-6">
+    <noticias-viewer 
+    
+      noticias="$ctrl.noticias"
+      on-noticia-clicked="$ctrl.onNoticiaClicked($event)"
+      criar-novo-noticia="$ctrl.criarNovoNoticia($event)"
+      
+      resetar-noticias="$ctrl.resetarNoticias($event)">
+
+    </noticias-viewer>
+  </div>
+  <div class="col-xs-6" ui-view>
+
+  </div>
+</div>

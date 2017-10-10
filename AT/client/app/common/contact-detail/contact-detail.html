@@ -1,0 +1,24 @@
+<h3>Área de Lançamentos</h3>
+<p>
+  <span><strong>ID: </strong></span>
+  <span ng-bind="$ctrl.contato.id"></span>
+</p>
+<p>
+  <span><strong>Nome: </strong></span>
+  <span ng-bind="$ctrl.contato.name"></span>
+</p>
+<p>
+  <span><strong>Descriçao : </strong></span>
+  <span ng-bind="$ctrl.contato.mensagem"></span>
+</p>
+<p>
+  <span><strong>Valor : </strong></span>
+  <span ng-bind="$ctrl.contato.autor"></span>
+</p>
+<p>
+  <span><strong>Categoria : </strong></span>
+  <span ng-bind="$ctrl.contato.date"></span>
+</p>
+<a class="btn btn-default" ui-sref="contacts.edit">Editar</a>
+<a class="btn btn-default" ng-click="$ctrl.deletarContato()">Deletar</a>
+

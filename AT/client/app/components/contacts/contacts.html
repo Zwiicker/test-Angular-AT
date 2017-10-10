@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>Lançamentos</h1>
+  </div>
+  <div class="col-xs-6">
+    <contacts-viewer 
+      contatos="$ctrl.contacts"
+      on-contato-clicked="$ctrl.onContatoClicked($event)"
+      criar-novo-contato="$ctrl.criarNovoContato($event)"
+      
+      resetar-contatos="$ctrl.resetarContatos($event)">
+    </contacts-viewer>
+  </div>
+  <div class="col-xs-6" ui-view>
+
+  </div>
+</div>

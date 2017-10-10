@@ -1,0 +1,24 @@
+<h3>Área de Notícias</h3>
+<p>
+  <span><strong>ID: </strong></span>
+  <span ng-bind="$ctrl.noticia.id"></span>
+</p>
+<p>
+  <span><strong>Título: </strong></span>
+  <span ng-bind="$ctrl.noticia.name"></span>
+</p>
+<p>
+  <span><strong>Mensagem : </strong></span>
+  <span ng-bind="$ctrl.noticia.mensagem"></span>
+</p>
+<p>
+  <span><strong>Autor : </strong></span>
+  <span ng-bind="$ctrl.noticia.autor"></span>
+</p>
+<p>
+  <span><strong>Data : </strong></span>
+  <span ng-bind="$ctrl.noticia.date"></span>
+</p>
+<a class="btn btn-default" ui-sref="noticias.edit">Editar</a>
+<a class="btn btn-default" ng-click="$ctrl.deletarNoticia()">Deletar</a>
+

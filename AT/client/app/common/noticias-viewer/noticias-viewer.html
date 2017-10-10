@@ -1,0 +1,34 @@
+<h3>
+  Lista de Notícias
+  <button class="btn btn-primary" 
+          ng-click="$ctrl.onAddBtnClicked({})"
+          uib-tooltip="Adicionar nova notícia"
+          tooltip-placement="top">
+    <span class="glyphicon glyphicon-plus"></span>
+  </button>
+  <button class="btn btn-primary"
+          ng-click="$ctrl.resetarNoticias()"
+          uib-tooltip="Resetar notícias"
+          tooltip-placement="top">
+    <span class="glyphicon glyphicon-refresh"></span>
+  </button>
+</h3>
+<p ng-repeat="noticia in $ctrl.noticias track by noticia.id"
+   ng-click="$ctrl.onNoticiaClicked({$event:noticia})">
+  <span><strong>id: </strong></span>
+  <span><strong>{{noticia.id}}<br></strong></span>
+
+  <span><strong>Título: </strong></span>
+  <span><strong>{{noticia.name}}<br></strong></span>
+
+  <span><strong>Mensagem : </strong></span>
+  <span>{{noticia.mensagem}}<br></span>
+
+  <span><strong>Autor : </strong></span>
+  <span>{{noticia.autor}}<br></span>
+
+  <span><strong>Data : </strong></span>
+  <span>{{noticia.date}}<br></span>
+
+
+</p>

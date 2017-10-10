@@ -1,0 +1,34 @@
+<h3>
+  Lista de Lançamentos
+  <button class="btn btn-primary" 
+          ng-click="$ctrl.onAddBtnClicked({})"
+          uib-tooltip="Adicionar novo Lançamento"
+          tooltip-placement="top">
+    <span class="glyphicon glyphicon-plus"></span>
+  </button>
+  <button class="btn btn-primary"
+          ng-click="$ctrl.resetarContatos()"
+          uib-tooltip="Resetar Lançamentos"
+          tooltip-placement="top">
+    <span class="glyphicon glyphicon-refresh"></span>
+  </button>
+</h3>
+<p ng-repeat="contato in $ctrl.contatos track by contato.id"
+   ng-click="$ctrl.onContatoClicked({$event:contato})">
+  <span><strong>id: </strong></span>
+  <span><strong>{{contato.id}}<br></strong></span>
+
+  <span><strong>Nome: </strong></span>
+  <span><strong>{{contato.name}}<br></strong></span>
+
+  <span><strong>Descrição : </strong></span>
+  <span>{{contato.mensagem}}<br></span>
+
+  <span><strong>Valor : </strong></span>
+  <span>{{contato.autor}}<br></span>
+
+  <span><strong>Categoria : </strong></span>
+  <span>{{contato.date}}<br></span>
+
+
+</p>

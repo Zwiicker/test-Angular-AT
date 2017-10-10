@@ -1,0 +1,28 @@
+<h3>Editor de Notícia</h3>
+<form>
+  <div class="form-group">
+    <input type="text"
+          class="form-control"
+          placeholder="Título"
+          ng-model="$ctrl.noticia.name">
+    <input type="text"
+          class="form-control"
+          placeholder="Mensagem"
+          ng-model="$ctrl.noticia.mensagem">
+    <input type="text"
+          class="form-control"
+          placeholder="Autor"
+          ng-model="$ctrl.noticia.autor">
+    <input type="text"
+          class="form-control"
+          placeholder="Data"
+          ng-model="$ctrl.noticia.date">
+    <button class="btn btn-danger form-control"
+            ng-click="$ctrl.editing ? 
+                      $ctrl.modificarNoticia({$event:$ctrl.noticia}) :
+                      $ctrl.novoNoticia({$event:$ctrl.noticia})">
+      Enviar
+    </button>
+    <span>{{$ctrl.erro}}</span>
+  </div>
+</form>

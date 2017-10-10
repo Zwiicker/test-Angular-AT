@@ -1,0 +1,18 @@
+<h3>Área de Categorias</h3>
+<p>
+  <span><strong>ID: </strong></span>
+  <span ng-bind="$ctrl.categoria.id"></span>
+</p>
+<p>
+  <span><strong>Name: </strong></span>
+  <span ng-bind="$ctrl.categoria.name"></span>
+</p>
+<p>
+  <span><strong>Descrição : </strong></span>
+  <span ng-bind="$ctrl.categoria.mensagem"></span>
+</p>
+
+
+<a class="btn btn-default" ui-sref="categorias.edit">Editar</a>
+<a class="btn btn-default" ng-click="$ctrl.deletarCategoria()">Deletar</a>
+
