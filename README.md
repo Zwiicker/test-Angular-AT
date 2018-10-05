@@ -1,7 +1,7 @@
 
 
-- npm install 
+- -npm install 
 
-- npm start
+- -npm start
 
 - Abrir no http://localhost:3000/ 
