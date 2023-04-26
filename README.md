@@ -1,0 +1,30 @@
+<div align="center"><img align="" width="150px" src="/infnet.png">
+ 
+<br /><br />
+ 
+  Aplicação de um projeto acadêmico desenvolvido durante o 4° Período da faculdade [INFNET](https://www.infnet.edu.br/infnet/instituto/) <br /><br />
+  
+</div> 
+
+## About
+
+Aplicação sobre um Gerenciador Financeiro Pessoal de Amigos utilizando as linguagens Javascript ( com o framework Angular), HTML e CSS.<br /><br /> 
+    
+## Programming languages and tools
+
+<p align="left">
+   <a href="https://github.com/Zwiicker?tab=repositories&q=&type=&language=javascript&sort="><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/></a>
+  <a href="https://github.com/Zwiicker?tab=repositories&q=&type=&language=html&sort="><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML"/></a>
+   <a href="https://github.com/Zwiicker?tab=repositories&q=&type=&language=css&sort="><img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" alt="CSS"/></a>
+  <a href="https://github.com/">
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="github"/>
+  </a>
+</p>
+<br /><br />
+
+## Demo
+
+<div 
+     align="center"><img align="" width="" src="/lancamentos.jpg">
+</div> 
+
